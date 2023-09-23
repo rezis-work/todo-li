@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Cardo", serif;
+  background-color: #495057;
+}
+
+.todo {
+  padding: 50px 0;
+}
+
+.container {
+  width: 400px;
+  padding: 30px;
+  border: 2px solid #212529;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  color: #ced4da;
+  letter-spacing: 2px;
+}
+
+.todo-header {
+  width: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  height: 30px;
+  padding-left: 5px;
+  color: #212529;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.btn {
+  height: 30px;
+  padding: 0 20px;
+  background-color: #dee2e6;
+  color: #212529;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #868e96;
+}
+
+.todo-body {
+  width: 250px;
+  margin: 10px auto;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.btn-icon {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin-left: auto;
+  width: 25px;
+  height: 25px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #212529;
+  font-weight: 700;
+}
+
+footer a span {
+  transition: all 0.3s ease-in;
+}
+
+footer a span:hover {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .todo {
+    padding: 20px 0;
+  }
+
+  .container {
+    width: 80%;
+    border: 2px solid #212529;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .container h1 {
+    margin-bottom: 10px;
+    color: #ced4da;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .todo-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input {
+    height: 30px;
+    padding-left: 5px;
+    color: #212529;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .btn {
+    margin-left: auto;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .todo-body {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 10px;
+  }
+
+  .icon {
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+  }
+
+  footer a {
+    display: block;
+    text-decoration: none;
+    font-size: 7px;
+    color: #212529;
+    font-weight: 700;
+  }
+}
